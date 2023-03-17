@@ -59,7 +59,7 @@ const displayQuiz = (data) => {
     quizContainer.innerHTML = "";
     return;
   }
-  console.log(data)
+  
   data.forEach((quiz, i) => {
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
   <div class="flex items-center">
@@ -113,7 +113,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   let storage = JSON.parse(localStorage.getItem("result"));
   if (storage) {
     localStorage.setItem(
-      "results",
+      "result",
       JSON.stringify([
         ...storage,
         {
@@ -123,9 +123,10 @@ document.querySelector("#submit").addEventListener("click", () => {
         },
       ])
     );
-  } else {
+  } 
+  else {
     localStorage.setItem(
-      "results",
+      "result",
       JSON.stringify([
         {
           marks: totalMark,
@@ -155,8 +156,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   </div>
   
   <button onclick="location.reload();" class="bg-green-600 text-white w-full py-2 rounded mt-16">Restart</button>
-  ${
-    storage
+  ${      storage
       ? `<div class="mt-5">
       <h1 class="text-center">Previous Submissions <button class="text-blue-800 text-xs" onclick={localStorage.clear();location.reload()}>Clear History</button></h1>
     <div
