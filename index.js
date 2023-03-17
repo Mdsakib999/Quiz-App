@@ -44,19 +44,14 @@ startQuiz.addEventListener("click", () => {
 });
 
 // All quiz data fetched from json
-// const loadQuiz = async () => {
-//   const res = await fetch("./data/quiz.json");
-//   const data = await res.json;
-//   quizData = data;
-//   console.log(data);
-//   displayQuiz(data);
-// };
+const loadQuiz = async () => {
+  const res = await fetch("./data/quiz.json");
+  const data = await res.json();
+  quizData = data;
+  displayQuiz(data);
 
-const loadQuiz = () => {
-  fetch("./data/quiz.json")
-  .then(res => res.json())
-  .then(data => displayQuiz(data))
-}
+};
+
 
 // Displaying quiz on quiz page
 const displayQuiz = (data) => {
@@ -64,7 +59,7 @@ const displayQuiz = (data) => {
     quizContainer.innerHTML = "";
     return;
   }
-
+  console.log(data)
   data.forEach((quiz, i) => {
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
   <div class="flex items-center">
