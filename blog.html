@@ -4,13 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .b{
+        border: 2px solid;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-cyan-50">
   
-  <div class="bg-cyan-50">
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <h1 class="mx-auto mt-10 font-bold text-2xl text-center underline">Question & Answer</h1>
+  <div class="b w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl">
+    <h3 class="font-semibold text-xl">1. What is the difference between map, filter, foreach and find?</h3>
+    <p>Ans: <b>forEach()</b> applies a function to each element of a collection, but does not return a new collection. Instead, it is used for performing some operation on each element in the collection, such as printing or updating a variable.
+    In forEach() we need to execute a function for each individual element in an array. Good practice is that we should use .forEach() when we can’t use other array methods to accomplish your goal.
+    </p>
+    <p><b>.map()</b> applies a function to each element of a collection and returns a new collection containing the result. For example, map can be used to convert an array of integers to an array of their squares.
+    We can use .map() when we want to transform elements in an array.</p>
+    <p><b>.filter()</b> applies a function to each element of a collection and returns a new collection containing only those elements for which the function returns true.
+    We should use .filter() when we want to select a subset of multiple elements from an array.</p>
+    <p><b>.find()</b> applies a function to each element of a collection and returns the first element for which the function returns true. If no element satisfies the condition, it returns undefined. 
+    We can use .find() When we want to select a single element from an array.</p>
+    <p>In short the basic defference is, map and filter return new collections, foreach performs an operation on each element without returning anything, and find returns the first element that satisfies a condition.</p>
+  </div>
+
+  <div class="b w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl">
+    <h3 class="font-semibold text-xl">2. What is the difference</h3>
+    
+  </div>
+
+  <div class="b w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl">
+    <h3 class="font-semibold text-xl">3. What is the difference</h3>
+    <p>Ans: </p>
+  </div>
+
+  <div class="b w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl">
+    <h3 class="font-semibold text-xl">4. What is the difference</h3>
+    <p>Ans: </p>
+  </div>
+
+  <div class="b w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl">
+    <h3 class="font-semibold text-xl">5. What is the difference</h3>
+    <p>Ans: </p>
   </div>
 </body>
 </html>
