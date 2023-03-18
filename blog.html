@@ -14,10 +14,10 @@
 <body class="bg-cyan-50">
   
     <h1 class="mx-auto mt-10 font-bold text-2xl text-center underline">Question & Answer</h1>
-  <div class="b w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl">
+  <div class=" w-[90%] mx-auto mt-10 bg-slate-50 p-5 rounded-xl shadow-xl">
     <h3 class="font-semibold text-xl">1. What is the difference between map, filter, foreach and find?</h3>
     <p>Ans: <b>forEach()</b> applies a function to each element of a collection, but does not return a new collection. Instead, it is used for performing some operation on each element in the collection, such as printing or updating a variable.
-    In forEach() we need to execute a function for each individual element in an array. Good practice is that we should use .forEach() when we can’t use other array methods to accomplish your goal.
+    In forEach() we need to execute a function for each individual element in an array. Good practice is that we should use .forEach() when we can not use other array methods to accomplish your goal.
     </p>
     <p><b>.map()</b> applies a function to each element of a collection and returns a new collection containing the result. For example, map can be used to convert an array of integers to an array of their squares.
     We can use .map() when we want to transform elements in an array.</p>
@@ -28,24 +28,33 @@
     <p>In short the basic defference is, map and filter return new collections, foreach performs an operation on each element without returning anything, and find returns the first element that satisfies a condition.</p>
   </div>
 
-  <div class="b w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl">
-    <h3 class="font-semibold text-xl">2. What is the difference</h3>
-    
+  <div class=" w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl shadow-xl">
+    <h3 class="font-semibold text-xl">2. what is the difference between local storage and session storage and cookies?</h3>
+    <p><b>Local Storage</b>
+        Local storage is a type of storage that allows web applications to store data on a user's browser with no expiration date. It is a web storage method that helps us store data on the client’s computer in the form of key/value pairs in a web browser. Local storage provides a way for web applications to persist data even after the browser is closed, and is typically used to store user preferences or application data. Local storage is accessible from the client-side only.</p>
+    <p><b>Session Storage</b>
+        Session storage is a type of storage that allows web applications to store data on a user's browser for the duration of a session (i.e., until the user closes the browser tab or window). It is very similar to the local storage. Still, the main difference lies in the lifespan as it persists in the browser until its current tab is on. Once you close the tab or terminate it, the data on session storage also gets lost. Session storage is accessible from the client-side only.
+    </p>
+    <p><b>Cookies</b>
+        Cookies are small text files that a website stores on a user's browser. The only option that was available before HTML5 was introduced was cookies. They are typically used to store user preferences or session information such as login status, shopping cart contents, or language settings. It help us store the client-side data to enable a personalized experience for the website’s users. Cookies have an expiration date, and can be either persistent (saved on the hard drive) or session-based (deleted when the user closes the browser). Cookies are accessible from both the client and the server-side.
+    </p>
+    <p>In summary, cookies are used to store user preferences and session information, local storage is used for permanent storage of application data, and session storage is used for temporary storage of data during a session.</p>
   </div>
 
-  <div class="b w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl">
-    <h3 class="font-semibold text-xl">3. What is the difference</h3>
-    <p>Ans: </p>
+  <div class=" w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl shadow-xl">
+    <h3 class="font-semibold text-xl">3. What is the event loop and how does it work?</h3>
+    <p>Ans: JavaScript is a single-threaded language, meaning it can execute one task at a time. It is also designed to handle asynchronous operations, such as making API requests or running timer-based functions. The event loop has one simple task - to monitor the call stack and callback queue. If the call stack is empty, the event loop will take the first event from the queue and push it onto the call stack, which effectively executes it. The event loop ensures that the execution of a non-blocking task does not block the execution of another task, allowing JavaScript to handle multiple operations simultaneously. This is an important feature for building responsive and efficient web applications that can handle user interactions and external events.
+    </p>
   </div>
 
-  <div class="b w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl">
-    <h3 class="font-semibold text-xl">4. What is the difference</h3>
-    <p>Ans: </p>
+  <div class=" w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl shadow-xl">
+    <h3 class="font-semibold text-xl">4. quizTimer() function</h3>
+    <p>Ans: quizTimer() function takes a parameter then check it through cleaeInterval. Then set time and some condition. then append the time inside countHTML container dynamically using template string. based on time condition we add or remove text color of countHTML container.</p>
   </div>
 
-  <div class="b w-[90%] mx-auto mt-10 bg-slate-50 p-4 rounded-xl">
-    <h3 class="font-semibold text-xl">5. What is the difference</h3>
-    <p>Ans: </p>
+  <div class=" w-[90%] mx-auto my-10 bg-slate-50 p-4 rounded-xl shadow-xl">
+    <h3 class="font-semibold text-xl">5. chooseQuiz() function</h3>
+    <p>Ans: chooseQuiz() function takes two parameter index and givenAns. Then check the given ans and stored answer. Takes an empty variable called serial. looping through the answers array we can match existing id and quiz id, if matched we splice the answers array and break the code. then increase the serial. If not matched we push quizData index and givenAns into answers array. At the end pass the answers through displayAnswers function.</p>
   </div>
 </body>
 </html>
